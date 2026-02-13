@@ -56,3 +56,7 @@ chmod +x install.sh
 
 1. Install dependencies using your package manager (e.g., `pacman` and `yay`).
 2. Move the configuration files to `~/.config/quickshell/`.
+
+## Notes
+
+There is a socket for toggling the wallpaper selector and it looks at ~/Wallpapers. You need to add something like `bind=SUPER,i,spawn_shell,echo "toggle" | socat - UNIX-CONNECT:$HOME/.config/quickshell/wallpaper.sock` to your mango config to toggle it with a keybind
