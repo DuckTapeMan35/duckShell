@@ -43,8 +43,8 @@ The installer will automatically install:
 ### Quick Install
 
 ```bash
-git clone <your-repo-url> ~/quickshell-config
-cd ~/quickshell-config
+git clone https://github.com/DuckTapeMan35/duckShell
+cd duckShell
 
 Make the installer executable and run it:
 bash
