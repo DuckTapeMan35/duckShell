@@ -96,7 +96,10 @@ install_dependencies() {
     yay -S --needed  rmpc || print_warning "Failed to install rmpc"
     
     print_status "Installing ttf-fira-code-nerd from AUR..."
-    yay -S --needed  ttf-fira-code-nerd || print_warning "Failed to install ttf-fira-code-nerd"
+    yay -S --needed  ttf-firacode-nerd || print_warning "Failed to install ttf-fira-code-nerd"
+
+    print_status "Installing qt6 from AUR..."
+    yay -S --needed qt6 || print_warning "Failed to install qt6"
     
     print_success "All dependencies installed"
 }

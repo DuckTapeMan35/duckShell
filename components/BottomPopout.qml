@@ -33,6 +33,7 @@ ColumnLayout {
   property string wallpaper: ""
   property bool bgChanged: false
   property string themeChangerPath: ""
+  property string wallpaperPath: ""
 
   SocketServer {
     active: true
@@ -63,7 +64,7 @@ ColumnLayout {
 
     FolderListModel {
       id: wallpaperModel
-      folder: StandardPaths.writableLocation(StandardPaths.HomeLocation) + "/Wallpapers"
+      folder: wallpaperPath
       nameFilters: ["*.jpg", "*.png", "*.jpeg", "*.webp"]
       showDirs: false
       showDotAndDotDot: false
